@@ -1,0 +1,49 @@
+Juego combinatorio imparcial
+
+
+Juego de 2 jugadores por turnos, de informacion perfecta y sin azar, que siempre termina
+y cuyo resultado es que un jugador gane y el otro pierde
+Ambos jugadores son identicos.
+Si se grafico como un arbol, existen posiciones iniciales(donde no llegan flechas), y 
+posiciones finales( donde no salen flechas).
+
+Se pude modelar como un DAG.
+
+Teorema de Determinacion : En todo juego combinatoria imparcial, toda posicion es perdedora o ganadora.
+
+Se resuelve como DP,
+Para un estado i, si apunta a una posicion perdedora => es posicion ganadora,
+Para un estado i, si siempre apunta a posiciones ganadora => es posicion perdedora.
+
+Wythoff's Game
+tienes 2 pilas de: n y m,
+
+Puedes retirar una cantidad de una pila, o retirar una misma cantidad de las 2 pilas.
+El que no puede jugar es perdedor.
+
+
+
+NIM's Game
+si el jugador no puede jugar,pierde.
+res(A+A) = 0;perdedora
+Si A===B, entonces: res(A+C) = res(B+C);
+
+
+
+______
+| | | |
+______
+| | | |
+______
+| | | |
+______
+
+Todos los juegos se deben simular como una pila de piedras.
+
+Teorema de Gundy
+Cualquier juego combinatorio imparcial se puede llevar a un NIM
+
+g(G) == 0 <=> G es perdedora.
+g(G) = mex{g(h)|h es hijo de G}.
+g(A+B) = g(A)^g(B).    (xor)
+

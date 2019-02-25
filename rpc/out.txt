@@ -1,0 +1,11 @@
+-1
+Pell’s number 4 is divisible by 2
+Pell’s number 4 is divisible by 3
+Pell’s number 4 is divisible by 4
+Pell’s number 6 is divisible by 2
+Pell’s number 6 is divisible by 7
+-1
+Pell’s number 24 is divisible by 2
+Pell’s number 24 is divisible by 3
+Pell’s number 24 is divisible by 4
+Pell’s number 24 is divisible by 7

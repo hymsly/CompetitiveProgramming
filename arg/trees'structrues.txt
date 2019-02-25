@@ -1,0 +1,20 @@
+Centroid Descomposition:
+	Sirve para querys en un arbol.
+	Recursividad en Arboles (divide and conquer)
+	Iterar por cada centroido:
+		Contar caminos hasta el centroido +
+		Contar caminos que no pasan por ese centroido
+
+
+Treap:
+	arbol binario que contiene 2 valores: prioridad y clave
+	Si miramos solo la prioridad, es un heap binario: arbol binario, donde el padre tiene mayor valor que todos sus hijos
+	Si miramos solo las clvaes, es un arbol binario de busqueda: arbol binario, donde un hijo tiene valor meno, y el otro mayor
+	PROPIEDAD:
+	Existe un unico treap que tenga los nodos(prioridad y valor).
+	Si las prioridades son aleatorios, entonces la forma del arbol tiene distribucion uniforme entre todos los arboles
+	binarios de n nodos.
+	Por la propiedad anerior, la profundidad del arbol es O(lon(n)) en valor esperado.
+	OPERACIONES (O(log(n)):
+	split(t,k): divide el treap en dos arboles, (<k && >=k)
+	merge(t1,t2) une los treaps t1 y t2. Requiere como preocondicion, que todas las keys de t1 sean menores que las de t2
